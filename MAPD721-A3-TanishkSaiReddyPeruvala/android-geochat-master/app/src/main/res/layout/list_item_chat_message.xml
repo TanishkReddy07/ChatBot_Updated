@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/bubbleMessageContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:background="@drawable/ic_chat_bubble2"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtUser"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="User"
+                android:paddingRight="@dimen/item_padding"
+                android:textStyle="normal|bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="18dp"
+                app:srcCompat="@drawable/ic_msg_location"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:id="@+id/imgLocationIcon" />
+
+            <TextView
+                android:id="@+id/txtInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Sep 21, 2016 10:12 pm"
+                android:textColor="@android:color/darker_gray"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

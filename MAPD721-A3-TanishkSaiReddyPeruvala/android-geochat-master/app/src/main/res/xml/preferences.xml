@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="@string/pref_key_message_counter"
+        android:title="@string/pref_title_message_counter"
+        android:summary="@string/pref_summary_message_counter"
+        android:entries="@array/pref_entries_message_counter"
+        android:entryValues="@array/pref_values_message_counter"
+        android:defaultValue="2"
+        android:icon="@drawable/ic_chat_message_counter" />
+</PreferenceScreen>
